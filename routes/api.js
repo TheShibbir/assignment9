@@ -8,10 +8,10 @@ router.get("/", (req, res) => {
 });
 
 // books api
-router.get("/book", bookController.getBook);
-router.post("/book", bookController.createBook);
-router.get("/book/:id", bookController.singleBook);
-router.put("/book/:id", bookController.updateBook);
-router.delete("/book/:id", bookController.deleteBook);
+router.get("/books", bookController.getBook);
+router.post("/books", bookController.createBook);
+router.get("/books/:id", bookController.singleBook);
+router.put("/books/:id", bookController.updateBook);
+router.delete("/books/:id", bookController.deleteBook);
 
 module.exports = router;
